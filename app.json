@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "tuner-app",
-    "slug": "tuner-app",
+    "slug": "tuner",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "03d2ac6d-50d8-436f-8a44-45525965d9a2"
+      }
+    },
+    "owner": "seabuffalo"
   }
 }
