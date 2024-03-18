@@ -1,23 +1,27 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
 
-const Needle = () => {
+const Needle = ({ note }) => {
+  
   return (
-    <View style={style}>
+    <View style={style.needleContainer}>
+      <View style={style.needle}></View>
     </View>
   );
 };
 
 const style = {
-  backgroundColor: "rgba(255,255,255,.3)",
-  borderWidth: 1,
-  borderColor: "rgba(255,255,255,.5)", 
-  borderRight: 0,
-  height: 150,
-  marginTop: 50,
-  marginLeft: 10,
-  marginRight: 10,
-  borderRadius: 5,
-  alignSelf: "stretch"
+  needleContainer: {
+    alignSelf: "stretch",
+    alignItems: "center",
+    borderRadius: 5,
+    height: 118,
+  },
+  needle: {
+    width: 10,
+    height: "100%",
+    borderRadius: 5,
+    backgroundColor: "rgba(255,255,255,.4)",
+  },
 };
 
 export default Needle;
